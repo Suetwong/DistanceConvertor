@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ConversionCalculation</string>
+
+    <string-array name="weight_array">
+        <item>
+            <name>g</name>
+            <convertIndex>
+                1
+            </convertIndex>
+        </item>
+        <item>
+            <name>kg</name>
+            <convertIndex>
+                1000
+            </convertIndex></item>
+    </string-array>
+</resources>

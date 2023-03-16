@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--a title-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/title"
+                android:text="Distance conversion calculator"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp">
+            </TextView>
+        </LinearLayout>
+
+        <!--instructor text for input & output -->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="7">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:text="Input:"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+               />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_marginLeft="10dp"
+                android:text="Output:"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+
+        <!--for user to input & show the output -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="7">
+
+            <!--a edit text for input-->
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/left_et"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="="
+                android:gravity="center"
+                android:textSize="50sp" />
+
+            <!--a textview  for showing output-->
+            <TextView
+                android:id="@+id/right_Tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="0"
+                android:textSize="20sp"
+                >
+            </TextView>
+        </LinearLayout>
+
+        <!--2 spinners for choosing units for input and output -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="7">
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/left_spinner"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="50dp">
+            </Spinner>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                ></TextView>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/right_spinner"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="50dp">
+            </Spinner>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
